@@ -143,6 +143,7 @@ struct Login: View {
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
         
     }
 }

@@ -28,7 +28,6 @@ struct Login: View {
                
                 VStack{
                     
-        
                     VStack(spacing: -15){
                         Image("InstagramLogo")
                             .renderingMode(.template)
@@ -36,7 +35,7 @@ struct Login: View {
                             .frame(width:110 , height:110)
                             .foregroundColor(.white)
                         Image("InstagramText")
-                            .renderingMode( .template)
+                            .renderingMode(.template)
                             .resizable()
                             .frame(width:220 , height: 80)
                             .foregroundColor(.white)

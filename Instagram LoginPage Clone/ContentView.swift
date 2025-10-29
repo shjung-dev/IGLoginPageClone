@@ -8,8 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var path = NavigationPath()
     var body: some View {
-        Login()
+        NavigationStack(path: $path){
+            Login(path: $path)
+                .navigationDestination(for: String.self){ screen in
+                    if screen == "SignUp"{
+                        SignUp(path: $path)
+                    }
+                }
+        }
     }
 }
 
